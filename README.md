@@ -21,4 +21,5 @@ Con él se puede:
 
 - [Investigación](docs/investigacion.md): qué hacen el HiChord y el FM-1, la perilla de AliExpress y las crates de Rust.
 - [Plan](docs/plan.md): principios, mapa de teclas, funciones, arquitectura, fases y preguntas abiertas.
+- [Mando](docs/mando.md): mapeo del macropad de 12 teclas y 4 perillas.
 - [Bocetos](docs/bocetos/README.md): todas las pantallas.

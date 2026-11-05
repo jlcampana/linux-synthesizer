@@ -38,3 +38,8 @@ Autoguardado, tarjetas con nombres divertidos y exportación a MP3, OGG o WAV co
 ## Mapa del teclado y la perilla
 
 ![Mapa del teclado](mapa-teclado.svg)
+
+## El mando: 12 teclas y 4 perillas
+Ver [mando.md](../mando.md).
+
+![Mando](mando-12-teclas.svg)
