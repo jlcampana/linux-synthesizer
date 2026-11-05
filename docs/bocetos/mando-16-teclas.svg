@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" width="960" height="680" font-family="Fredoka, Nunito, 'Arial Rounded MT Bold', Arial, sans-serif">
+  <title>Chispa – mapa del mando de 16 teclas y 3 perillas</title>
+  <rect width="960" height="680" rx="30" fill="#FFC21A"/>
+  <text x="40" y="54" font-size="30" font-weight="700" fill="#5A3A00">El mando: 16 teclas + 3 perillas</text>
+  <text x="40" y="82" font-size="16" font-weight="700" fill="#8a5a00">modo Tocar · (posición de las perillas por confirmar)</text>
+
+  <!-- cuerpo -->
+  <rect x="40" y="104" width="470" height="550" rx="34" fill="#1C1230" stroke="#FF7A1A" stroke-width="8"/>
+
+  <!-- perillas -->
+  <g font-weight="700" text-anchor="middle">
+    <g transform="translate(130,170)">
+      <circle r="40" fill="#3d2c66"/><circle r="30" fill="#c9c4d6"/><rect x="-3" y="-28" width="6" height="16" rx="3" fill="#1C1230"/>
+      <text y="62" font-size="15" fill="#fff">P1 Volumen</text>
+    </g>
+    <g transform="translate(275,170)">
+      <circle r="40" fill="#FF7A1A" opacity="0.5"/><circle r="30" fill="#FF7A1A"/><rect x="-3" y="-28" width="6" height="16" rx="3" fill="#fff"/>
+      <text y="62" font-size="15" fill="#FFE45C">P2 Mágica</text>
+    </g>
+    <g transform="translate(420,170)">
+      <circle r="40" fill="#3d2c66"/><circle r="30" fill="#c9c4d6"/><rect x="-3" y="-28" width="6" height="16" rx="3" fill="#1C1230"/>
+      <text y="62" font-size="15" fill="#fff">P3 Tempo</text>
+    </g>
+  </g>
+
+  <!-- teclas 4x4 -->
+  <g font-weight="700" text-anchor="middle">
+    <!-- fila 1 -->
+    <g transform="translate(60,262)"><rect width="96" height="86" rx="18" fill="#FF3B3B"/><text x="48" y="48" font-size="32" fill="#fff">I</text><text x="48" y="72" font-size="14" fill="#fff">Do</text></g>
+    <g transform="translate(173,262)"><rect width="96" height="86" rx="18" fill="#FF8A00"/><text x="48" y="48" font-size="32" fill="#fff">ii</text><text x="48" y="72" font-size="14" fill="#fff">Rem</text></g>
+    <g transform="translate(286,262)"><rect width="96" height="86" rx="18" fill="#FFD400"/><text x="48" y="48" font-size="32" fill="#5A3A00">iii</text><text x="48" y="72" font-size="14" fill="#5A3A00">Mim</text></g>
+    <g transform="translate(399,262)"><rect width="96" height="86" rx="18" fill="#2ED573"/><text x="48" y="48" font-size="32" fill="#fff">IV</text><text x="48" y="72" font-size="14" fill="#fff">Fa</text></g>
+    <!-- fila 2 -->
+    <g transform="translate(60,360)"><rect width="96" height="86" rx="18" fill="#1EC8FF"/><text x="48" y="48" font-size="32" fill="#fff">V</text><text x="48" y="72" font-size="14" fill="#fff">Sol</text></g>
+    <g transform="translate(173,360)"><rect width="96" height="86" rx="18" fill="#3D7BFF"/><text x="48" y="48" font-size="32" fill="#fff">vi</text><text x="48" y="72" font-size="14" fill="#fff">Lam</text></g>
+    <g transform="translate(286,360)"><rect width="96" height="86" rx="18" fill="#B45CFF"/><text x="48" y="48" font-size="32" fill="#fff">vii</text><text x="48" y="72" font-size="14" fill="#fff">Si°</text></g>
+    <g transform="translate(399,360)"><rect width="96" height="86" rx="18" fill="#fff"/><circle cx="48" cy="36" r="18" fill="#FF3B30"/><text x="48" y="74" font-size="14" fill="#5A3A00">Grabar</text></g>
+    <!-- fila 3: flechas -->
+    <g transform="translate(60,458)"><rect width="96" height="86" rx="18" fill="#2a1d48" stroke="#FFE45C" stroke-width="3"/><text x="48" y="56" font-size="40" fill="#FFE45C">←</text></g>
+    <g transform="translate(173,458)"><rect width="96" height="86" rx="18" fill="#2a1d48" stroke="#FFE45C" stroke-width="3"/><text x="48" y="56" font-size="40" fill="#FFE45C">↑</text></g>
+    <g transform="translate(286,458)"><rect width="96" height="86" rx="18" fill="#2a1d48" stroke="#FFE45C" stroke-width="3"/><text x="48" y="56" font-size="40" fill="#FFE45C">↓</text></g>
+    <g transform="translate(399,458)"><rect width="96" height="86" rx="18" fill="#2a1d48" stroke="#FFE45C" stroke-width="3"/><text x="48" y="56" font-size="40" fill="#FFE45C">→</text></g>
+    <!-- fila 4: menús -->
+    <g transform="translate(60,556)"><rect width="96" height="86" rx="43" fill="#8E8A99"/><text x="48" y="50" font-size="20" fill="#fff">Tono</text></g>
+    <g transform="translate(173,556)"><rect width="96" height="86" rx="43" fill="#FFE600"/><text x="48" y="50" font-size="20" fill="#5A3A00">Sonido</text></g>
+    <g transform="translate(286,556)"><rect width="96" height="86" rx="43" fill="#FF3B30"/><text x="48" y="50" font-size="20" fill="#fff">Modo</text></g>
+    <g transform="translate(399,556)"><rect width="96" height="86" rx="18" fill="#fff"/><path d="M36 20 L66 40 L36 60 Z" fill="#2ED573"/><text x="48" y="76" font-size="14" fill="#5A3A00">Play</text></g>
+  </g>
+
+  <!-- leyenda -->
+  <g font-weight="700" fill="#5A3A00">
+    <text x="540" y="128" font-size="22">Perillas (girar · pulsar)</text>
+    <g font-size="15">
+      <rect x="540" y="142" width="384" height="98" rx="16" fill="#fff"/>
+      <text x="556" y="166" font-size="17">P1 · Volumen</text>
+      <text x="556" y="188">+Tono: attack · +Sonido: release</text>
+      <text x="556" y="208">+Modo: filtro (brillo)</text>
+      <text x="556" y="228">pulsar: silencio</text>
+
+      <rect x="540" y="250" width="384" height="118" rx="16" fill="#FF7A1A"/>
+      <text x="556" y="274" font-size="17" fill="#fff">P2 · Mágica</text>
+      <text x="556" y="296" fill="#fff">con acorde pulsado: cambia su color</text>
+      <text x="556" y="316" fill="#fff">+Tono: tonalidad · +Sonido: sonido</text>
+      <text x="556" y="336" fill="#fff">+Modo: modo · pulsar: fijar acorde</text>
+      <text x="556" y="356" fill="#fff">menú + pulsar: aleatorio</text>
+
+      <rect x="540" y="378" width="384" height="78" rx="16" fill="#fff"/>
+      <text x="556" y="402" font-size="17">P3 · Tempo (40–300)</text>
+      <text x="556" y="424">+Tono: octava · +Modo: patrón</text>
+      <text x="556" y="444">pulsar: tap tempo</text>
+    </g>
+    <text x="540" y="490" font-size="20">Flechas = joystick del HiChord</text>
+    <g font-size="15">
+      <text x="540" y="514">con acorde: ↑ may/men · → 7ª · ↓ sus4 · ← dim</text>
+      <text x="540" y="536">dos a la vez: ↗ dom7 · ↘ 9ª · ↖ aum</text>
+    </g>
+
+    <!-- mini secuenciador -->
+    <text x="540" y="576" font-size="20">Modo Secuenciador</text>
+    <text x="540" y="598" font-size="14">las 16 teclas = 16 pasos del ritmo</text>
+    <g transform="translate(784,560)">
+      <rect width="140" height="104" rx="14" fill="#1C1230"/>
+      <g fill="#2a1d48">
+        <rect x="10" y="8" width="26" height="20" rx="5" fill="#FF3B3B"/><rect x="42" y="8" width="26" height="20" rx="5"/><rect x="74" y="8" width="26" height="20" rx="5"/><rect x="106" y="8" width="26" height="20" rx="5"/>
+        <rect x="10" y="32" width="26" height="20" rx="5" fill="#FF3B3B"/><rect x="42" y="32" width="26" height="20" rx="5"/><rect x="74" y="32" width="26" height="20" rx="5" fill="#FF3B3B"/><rect x="106" y="32" width="26" height="20" rx="5"/>
+        <rect x="10" y="56" width="26" height="20" rx="5" fill="#FF3B3B"/><rect x="42" y="56" width="26" height="20" rx="5"/><rect x="74" y="56" width="26" height="20" rx="5"/><rect x="106" y="56" width="26" height="20" rx="5"/>
+        <rect x="10" y="80" width="26" height="20" rx="5" fill="#FF3B3B"/><rect x="42" y="80" width="26" height="20" rx="5"/><rect x="74" y="80" width="26" height="20" rx="5" fill="#FF3B3B"/><rect x="106" y="80" width="26" height="20" rx="5" fill="#FF3B3B"/>
+      </g>
+    </g>
+    <text x="540" y="622" font-size="13">P2 instrumento · P2 pulsar salir</text>
+    <text x="540" y="642" font-size="13">P3 tempo · P3 pulsar play</text>
+  </g>
+</svg>

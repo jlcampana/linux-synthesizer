@@ -30,8 +30,8 @@ y los bocetos en [bocetos/](bocetos/README.md).
 
 ## 2. Control con el teclado
 
-> **Mando principal elegido:** macropad de 12 teclas y 4 perillas. Su mapeo completo está en
-> [mando.md](mando.md) ([boceto](bocetos/mando-12-teclas.svg)). Con él se toca casi todo
+> **Mando principal elegido:** [macropad de 16 teclas y 3 perillas](https://es.aliexpress.com/item/1005010043319280.html).
+> Su mapeo completo está en [mando.md](mando.md) ([boceto](bocetos/mando-16-teclas.svg)). Con él se toca casi todo
 > sin el teclado del ordenador. El mapa de abajo es para el teclado normal, que sigue funcionando
 > a la vez.
 
@@ -202,7 +202,7 @@ Cada fase termina con algo que el niño ya puede tocar.
 |---|---|---|
 | **0. Esqueleto** | Workspace, `cpal`, ventana `egui` a pantalla completa, `A` toca un seno | "¡Suena!" |
 | **1. Acordes** | `chispa-theory`, 7 acordes, flechas como modificadores, 1 sinte analógico con ADSR, pantalla principal | Tocar acordes de colores |
-| **2. Menús y mando** | Menús gris/amarillo/rojo, tonalidades, octava, `evdev` con el mando de 12 teclas y 4 perillas, asistente "Aprender mando", volumen, tempo y filtro | Cambiar tono y sonido con la perilla |
+| **2. Menús y mando** | Menús gris/amarillo/rojo, tonalidades, octava, `evdev` con el mando de 16 teclas y 3 perillas, asistente "Aprender mando", volumen, tempo y filtro | Cambiar tono y sonido con la perilla |
 | **3. Sonidos** | Motores FM, wavetable, ruido y sampler básico, 24 presets | Muchos instrumentos |
 | **4. Tempo y modos** | Reloj, tap tempo, Rasgueo, Arpegio, Repetir, Zumbido, Melodía | Música que se mueve sola |
 | **5. Efectos** | Cadena de efectos y limitador | Distorsión, eco… |
@@ -251,7 +251,7 @@ Fuente: **Fredoka** (OFL, redondeada y muy legible), incluida en el binario.
 1. **¿Cuántos años tiene tu hijo?** En el mensaje faltaba la edad. Con menos de 6 años conviene
    usar iconos en lugar de texto y quitar los nombres de los acordes. Con 8 o más se pueden
    enseñar nombres de acordes y notas. El plan admite las dos cosas con un ajuste de "nivel".
-2. ~~¿Qué teclado vais a comprar?~~ Resuelto: macropad de 12 teclas y 4 perillas, ver [mando.md](mando.md).
+2. ~~¿Qué teclado vais a comprar?~~ Resuelto: macropad de 16 teclas y 3 perillas, ver [mando.md](mando.md).
    Cuando llegue, hay que mirar su `lsusb` y los códigos que envía de fábrica.
 3. **¿En qué ordenador va a correr?** Si es un equipo antiguo o una Raspberry Pi, bajo la
    polifonía y la calidad de la reverb.

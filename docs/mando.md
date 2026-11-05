@@ -1,92 +1,136 @@
-# El mando: macropad de 12 teclas y 4 perillas
+# El mando: macropad de 16 teclas y 3 perillas
 
-Modelo elegido (AliExpress): teclado mecánico de **12 teclas y 4 perillas**. Cada perilla tiene
-3 acciones (girar a la izquierda, girar a la derecha y pulsar). Tiene **3 capas** con LED, RGB,
-interruptores *hot-swap*, USB-C, Bluetooth 5.0 y 2,4 GHz según el modelo.
+**Modelo elegido:** [teclado macro de 16 teclas y 3 perillas (AliExpress)](https://es.aliexpress.com/item/1005010043319280.html)
 
-Con 12 teclas y 4 perillas se puede hacer casi todo el HiChord **sin el teclado del ordenador**.
-El teclado normal sigue funcionando para "modo papá" y para las cosas avanzadas.
+- 16 teclas en rejilla 4×4 y 3 perillas. Cada perilla tiene 3 acciones: girar a la izquierda,
+  girar a la derecha y pulsar.
+- 3 capas con indicador LED, RGB, base de silicona antideslizante.
+- Cable USB-C, Bluetooth y 2,4 GHz. En inalámbrico apaga las luces.
+- Se configura **una vez en Windows** con el programa del fabricante y la configuración queda
+  guardada en el teclado. Después funciona en cualquier sistema.
+- Un comprador lo usa en Photoshop con las perillas para zoom y tamaño de pincel. Eso confirma
+  que las perillas pueden mandar cualquier tecla, no solo el volumen.
 
-![Mapa del mando](bocetos/mando-12-teclas.svg)
+**Por qué este y no el de 12 teclas y 4 perillas:** con 16 teclas caben las 4 flechas del
+joystick (como el HiChord de verdad) y además el **secuenciador de 16 pasos se toca directamente**,
+una tecla por paso. La cuarta perilla no hace falta, porque el filtro pasa a "volumen + botón rojo",
+que es como lo hace el HiChord.
 
-> La distribución exacta (3×4 o 4×3, posición de las perillas) se confirmará cuando llegue.
-> El boceto supone 3 filas de 4 teclas con las perillas arriba.
+![Mapa del mando](bocetos/mando-16-teclas.svg)
+
+> La posición exacta de las perillas se confirmará cuando llegue. El boceto las pone arriba.
 
 ---
 
-## Mapeo
+## Mapeo en modo Tocar
 
 ### Teclas
 
-| Fila | Tecla 1 | Tecla 2 | Tecla 3 | Tecla 4 |
+| | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
-| 1 | Acorde **I** (rojo) | Acorde **ii** (naranja) | Acorde **iii** (amarillo) | Acorde **IV** (verde) |
-| 2 | Acorde **V** (cian) | Acorde **vi** (azul) | Acorde **vii** (morado) | ● **Grabar** (looper) |
-| 3 | **Tono** (gris) | **Sonido** (amarillo) | **Modo** (rojo) | ▶ **Play / pausa** |
+| **Fila 1** | Acorde **I** (rojo) | Acorde **ii** (naranja) | Acorde **iii** (amarillo) | Acorde **IV** (verde) |
+| **Fila 2** | Acorde **V** (cian) | Acorde **vi** (azul) | Acorde **vii** (morado) | ● **Grabar** |
+| **Fila 3** | **←** | **↑** | **↓** | **→** |
+| **Fila 4** | **Tono** (gris) | **Sonido** (amarillo) | **Modo** (rojo) | ▶ **Play / pausa** |
 
-En modo Batería, las 7 teclas de acorde tocan los 7 golpes del kit.
+- **Flechas = joystick del HiChord.** Si las pulsas mientras mantienes un acorde, cambian su color:
+  ↑ mayor/menor · → 7ª · ↓ sus4 · ← disminuido. Dos flechas a la vez dan las diagonales:
+  ↗ 7ª dominante · ↘ 9ª · ↖ aumentado.
+- **Menús:** si mantienes Tono, Sonido o Modo, las flechas hacen lo mismo que en el HiChord.
+  - Tono: ←/→ tonalidad, ↑/↓ octava.
+  - Sonido: ←/→ sonido, ↑ efectos.
+  - Modo: ←/→ modo, ↑ BPM.
+- **Grabar:** arma o graba la pista actual del looper. Mientras mantienes Grabar, los acordes I–vi
+  (las 6 primeras teclas) eligen la pista 1–6.
+- En **modo Batería**, las 7 teclas de acorde tocan los 7 golpes del kit.
 
 ### Perillas
 
-La regla general es la misma que en el HiChord: **si mantienes un botón de menú, la perilla
-cambia lo de ese menú.**
+Igual que en el HiChord: **si mantienes un botón de menú, la perilla cambia algo de ese menú.**
 
-| Perilla | Girar | Girar + **Tono** | Girar + **Sonido** | Girar + **Modo** | Pulsar |
+| Perilla | Girar | + Tono | + Sonido | + Modo | Pulsar |
 |---|---|---|---|---|---|
-| **P1 · Volumen** | Volumen | Attack | Release | — | Silencio |
-| **P2 · Mágica** (el joystick) | Con un acorde pulsado: cambia su **color**. Si no: navega | Tonalidad | Sonido | Modo | Con acorde: **fijarlo** (chord lock). Con menú: 🎲 aleatorio |
-| **P3 · Tempo** | BPM (40–300) | Octava | — | Patrón de arpegio o ritmo | Tap tempo |
-| **P4 · Efecto** | Filtro (brillo) | — | Cantidad del efecto elegido | Swing | Efectos on/off |
+| **P1 · Volumen** | Volumen | Attack | Release | **Filtro** (brillo) | Silencio |
+| **P2 · Mágica** | Con un acorde pulsado: va pasando por sus colores. Si no, navega | Tonalidad | Sonido | Modo | Con acorde: **fijarlo** (chord lock). Con menú: 🎲 aleatorio |
+| **P3 · Tempo** | BPM (40–300) | Octava | Cantidad de efecto | Patrón de arpegio o ritmo | Tap tempo |
 
-**Colores del acorde con P2.** Mientras se mantiene un acorde, cada "clic" de la perilla pasa al
-siguiente color, en este orden:
+Orden de colores con P2: normal → mayor/menor → 7ª → 7ª dominante → 9ª → sus4 → disminuido →
+aumentado → (vuelta a normal). Sirve para que los más pequeños, a los que les cuesta combinar
+flechas, también puedan cambiar el color.
 
-normal → mayor/menor → 7ª → 7ª dominante → 9ª → sus4 → disminuido → aumentado → (vuelta a normal)
+---
 
-Es más fácil para un niño que las 8 direcciones del joystick, y en la pantalla se ve una rueda
-que va girando (boceto principal, a la derecha). Con el teclado del ordenador se siguen pudiendo
-usar las flechas.
+## Mapeo en modo Secuenciador (batería)
 
-### Capas
+Las **16 teclas son los 16 pasos del ritmo**: pulsas y el paso se enciende o se apaga.
+La pantalla muestra la rejilla y la fila del instrumento elegido.
 
-El mando tiene 3 capas, pero **los modos los gestiona la app**, no el mando. Propuesta: programar
-las 3 capas iguales, para que si el niño cambia de capa sin querer no pase nada.
-Alternativa para más adelante: capa 2 = looper (teclas 1–6 = pistas) y capa 3 = taller de samples.
+| Control | Función |
+|---|---|
+| Teclas 1–16 | Encender o apagar el paso |
+| P2 girar | Elegir instrumento (bombo, caja, charles…) |
+| P2 pulsar | Salir del secuenciador. El patrón se graba solo en una pista libre del looper |
+| P3 girar | Tempo |
+| P3 pulsar | Play / pausa |
+| P1 | Volumen, como siempre |
+
+---
+
+## Capas del mando
+
+Los modos los gestiona la app, así que **las 3 capas se programan iguales**: si el niño cambia de
+capa sin querer, no pasa nada. Más adelante se podrían usar la capa 2 para el looper y la capa 3
+para el taller de samples.
+
+---
+
+## Configuración (una vez, en Windows)
+
+La app lee el mando por su cuenta (ver abajo), así que **solo necesita que cada tecla y cada
+acción de perilla mande un código distinto**: 16 + 9 = 25 códigos. Propuesta, sin modificadores
+para que cada acción sea un solo evento:
+
+| Control | Código propuesto |
+|---|---|
+| Teclas 1–12 | `F13` … `F24` |
+| Teclas 13–16 | Teclado numérico `1` `2` `3` `4` |
+| P1 izquierda / derecha / pulsar | Num `5` / `6` / `7` |
+| P2 izquierda / derecha / pulsar | Num `8` / `9` / `0` |
+| P3 izquierda / derecha / pulsar | Num `/` / `*` / `-` |
+
+Si el programa del fabricante no tiene F13–F24, vale **cualquier** combinación de 25 teclas
+distintas (letras incluidas). El asistente de la app las aprende igual.
+
+Si los códigos de fábrica ya son todos distintos, ni siquiera hace falta configurarlo.
+
+Alternativa en Linux (sin verificar para este modelo):
+[`ch57x-keyboard-tool`](https://docs.rs/crate/ch57x-keyboard-tool) programa mandos con chip CH57x.
+Para saber si sirve, hay que mirar con `lsusb` si el ID es `1189:8890`, `1189:8840` u `1189:8842`.
 
 ---
 
 ## Cómo lo lee la app
 
-1. **`evdev` + acceso exclusivo (`EVIOCGRAB`).** La app abre el mando como dispositivo de
-   entrada propio. Mientras está abierta, sus pulsaciones no llegan al escritorio, así que no
-   cambian el volumen del sistema ni escriben letras en otras ventanas.
-2. **Como sabemos de qué dispositivo viene cada evento, no importa qué teclas envíe.** Basta con
-   que las 12 teclas y las 12 acciones de perilla manden **24 códigos distintos**. No hace falta
-   reprogramarlo a F13–F24.
-3. **Asistente "Aprender mando"** (primera vez o modo papá). La pantalla va pidiendo: *"pulsa la
-   tecla roja"*, *"gira la perilla 1 a la derecha"*… y guarda el resultado en `mando.ron`. Si un
-   código se repite, avisa.
-4. **Permisos:** una regla `udev` para que tu usuario pueda leer el mando sin `sudo`.
-   Ejemplo (los ID se rellenan con `lsusb`):
+1. **`evdev` + acceso exclusivo (`EVIOCGRAB`).** La app abre el mando directamente. Mientras está
+   abierta, sus pulsaciones no llegan al escritorio, así que no escriben en otras ventanas ni
+   cambian el volumen del sistema.
+2. **Se identifica por dispositivo**, así que no importa si sus códigos coinciden con teclas del
+   teclado normal: los dos funcionan a la vez sin pisarse.
+3. **Asistente "Aprender mando"** (la primera vez o desde el modo papá). La pantalla pide
+   *"pulsa la tecla roja"*, *"gira la perilla 1 a la derecha"*… y guarda el resultado en
+   `mando.ron`. Si un código se repite, avisa.
+4. **Permisos:** una regla `udev` para leerlo sin `sudo`. Los ID se sacan con `lsusb`:
    ```
    # /etc/udev/rules.d/70-chispa-mando.rules
-   SUBSYSTEM=="input", ATTRS{idVendor}=="1189", ATTRS{idProduct}=="8890", MODE="0660", TAG+="uaccess"
+   SUBSYSTEM=="input", ATTRS{idVendor}=="XXXX", ATTRS{idProduct}=="YYYY", MODE="0660", TAG+="uaccess"
    ```
-5. **Si los códigos de fábrica se repiten** (por ejemplo, varias perillas mandan volumen),
-   hay que reprogramarlo una vez:
-   - En Linux con [`ch57x-keyboard-tool`](https://docs.rs/crate/ch57x-keyboard-tool), una
-     herramienta en Rust para estos mandos con chip CH57x. Admite varios modelos de 3×4 y 4×3 con
-     2–3 perillas. El de 4 perillas **no aparece en la lista**, así que hay que comprobar con
-     `lsusb` si el ID es `1189:8890`, `1189:8840` u `1189:8842`.
-   - Si no, con el programa del fabricante en un Windows, una sola vez. La configuración queda
-     guardada en el mando.
+5. Si se desconecta el mando, la app sigue funcionando con el teclado normal y lo vuelve a coger
+   solo cuando se reconecta.
 
 ## Recomendaciones
 
-- **Usarlo por cable.** Tiene menos latencia, no depende de batería y el RGB sigue encendido
-  (en inalámbrico se apaga). Además, el fabricante pide configurarlo primero por cable.
-- **Teclas de colores.** Al ser *hot-swap* y con teclas estándar, se pueden poner teclas o pegatinas
-  de los 7 colores del arcoíris en los acordes, gris, amarillo y rojo en los menús, y blanco en
-  grabar y play, igual que en la pantalla. Así el niño asocia tecla y color al momento.
-- **RGB:** si permite color fijo, ponerlo en blanco suave o apagado para que no compita con
-  las teclas de colores.
+- **Usarlo por cable.** Tiene menos latencia, no gasta batería y las luces siguen encendidas.
+- **Teclas de colores.** Si las teclas son estándar (MX), poner teclas o pegatinas iguales a la
+  pantalla: arcoíris en los acordes, negro con flecha amarilla en las flechas, gris/amarillo/rojo
+  en los menús y blanco en Grabar y Play.
+- **RGB:** si permite color fijo, ponerlo suave o apagado para que no compita con las teclas de colores.
