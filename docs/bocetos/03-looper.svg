@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" font-family="Fredoka, Nunito, 'Arial Rounded MT Bold', Arial, sans-serif">
+  <title>Chispa – looper de 6 pistas</title>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD23F"/><stop offset="1" stop-color="#FFB000"/>
+    </linearGradient>
+    <pattern id="wave" width="24" height="60" patternUnits="userSpaceOnUse">
+      <rect x="2" y="18" width="4" height="24" rx="2" fill="#fff"/>
+      <rect x="8" y="8" width="4" height="44" rx="2" fill="#fff"/>
+      <rect x="14" y="22" width="4" height="16" rx="2" fill="#fff"/>
+      <rect x="20" y="12" width="4" height="36" rx="2" fill="#fff"/>
+    </pattern>
+  </defs>
+  <rect width="960" height="540" fill="#FF7A1A"/>
+  <rect x="12" y="12" width="936" height="516" rx="36" fill="url(#body)"/>
+
+  <rect x="36" y="30" width="250" height="48" rx="24" fill="#FF3B30"/>
+  <text x="161" y="62" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">● LOOPER</text>
+  <rect x="300" y="30" width="200" height="48" rx="24" fill="#fff"/>
+  <text x="400" y="62" text-anchor="middle" font-size="22" font-weight="700" fill="#FF7A1A">4 compases · 120</text>
+  <text x="924" y="62" text-anchor="end" font-size="18" font-weight="700" fill="#5A3A00">1–6 pista · Espacio grabar · Intro play/pausa</text>
+
+  <rect x="36" y="96" width="888" height="414" rx="26" fill="#1C1230" stroke="#FF7A1A" stroke-width="8"/>
+
+  <!-- marcas de compás -->
+  <g stroke="#3d2c66" stroke-width="3">
+    <line x1="330" y1="110" x2="330" y2="496"/><line x1="500" y1="110" x2="500" y2="496"/>
+    <line x1="670" y1="110" x2="670" y2="496"/>
+  </g>
+
+  <g font-weight="700" font-size="22">
+    <!-- pista 1 -->
+    <g transform="translate(56,114)">
+      <circle cx="30" cy="28" r="26" fill="#FF3B3B"/><text x="30" y="36" text-anchor="middle" fill="#fff">1</text>
+      <text x="70" y="22" font-size="15" fill="#FF3B3B">Piano</text><text x="70" y="42" font-size="13" fill="#8a7bb0">vol ▮▮▮▮▯</text>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="#FF3B3B"/>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="url(#wave)" opacity="0.6"/>
+    </g>
+    <!-- pista 2 -->
+    <g transform="translate(56,176)">
+      <circle cx="30" cy="28" r="26" fill="#FF8A00"/><text x="30" y="36" text-anchor="middle" fill="#fff">2</text>
+      <text x="70" y="22" font-size="15" fill="#FF8A00">Batería</text><text x="70" y="42" font-size="13" fill="#8a7bb0">vol ▮▮▮▮▮</text>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="#FF8A00"/>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="url(#wave)" opacity="0.6"/>
+    </g>
+    <!-- pista 3 grabando -->
+    <g transform="translate(56,238)">
+      <circle cx="30" cy="28" r="26" fill="#FF3B30" stroke="#fff" stroke-width="4"/><text x="30" y="36" text-anchor="middle" fill="#fff">3</text>
+      <text x="70" y="22" font-size="15" fill="#FFE45C">Mi voz</text><text x="70" y="42" font-size="13" fill="#FF3B30">● REC</text>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="none" stroke="#FFD400" stroke-width="3" stroke-dasharray="10 8"/>
+      <rect x="150" y="0" width="380" height="56" rx="14" fill="#FFD400"/>
+      <rect x="150" y="0" width="380" height="56" rx="14" fill="url(#wave)" opacity="0.6"/>
+    </g>
+    <!-- pistas vacías -->
+    <g transform="translate(56,300)" opacity="0.6">
+      <circle cx="30" cy="28" r="26" fill="none" stroke="#2ED573" stroke-width="4"/><text x="30" y="36" text-anchor="middle" fill="#2ED573">4</text>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="none" stroke="#3d2c66" stroke-width="3" stroke-dasharray="10 8"/>
+      <text x="465" y="36" text-anchor="middle" font-size="16" fill="#8a7bb0">vacía — pulsa 4 y Espacio para grabar</text>
+    </g>
+    <g transform="translate(56,362)" opacity="0.6">
+      <circle cx="30" cy="28" r="26" fill="none" stroke="#1EC8FF" stroke-width="4"/><text x="30" y="36" text-anchor="middle" fill="#1EC8FF">5</text>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="none" stroke="#3d2c66" stroke-width="3" stroke-dasharray="10 8"/>
+    </g>
+    <g transform="translate(56,424)" opacity="0.6">
+      <circle cx="30" cy="28" r="26" fill="none" stroke="#B45CFF" stroke-width="4"/><text x="30" y="36" text-anchor="middle" fill="#B45CFF">6</text>
+      <rect x="150" y="0" width="630" height="56" rx="14" fill="none" stroke="#3d2c66" stroke-width="3" stroke-dasharray="10 8"/>
+    </g>
+  </g>
+
+  <!-- cabezal de reproducción -->
+  <line x1="580" y1="106" x2="580" y2="500" stroke="#fff" stroke-width="5"/>
+  <path d="M566 104 L594 104 L580 122 Z" fill="#fff"/>
+  <!-- metrónomo (cuenta) -->
+  <g transform="translate(860,140)" text-anchor="middle" font-weight="700">
+    <circle r="34" fill="#FFE45C"/><text y="14" font-size="40" fill="#1C1230">3</text>
+  </g>
+</svg>

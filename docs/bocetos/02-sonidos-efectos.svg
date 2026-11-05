@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" font-family="Fredoka, Nunito, 'Arial Rounded MT Bold', Arial, sans-serif">
+  <title>Chispa – menú amarillo: sonidos y efectos</title>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD23F"/><stop offset="1" stop-color="#FFB000"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="#FF7A1A"/>
+  <rect x="12" y="12" width="936" height="516" rx="36" fill="url(#body)"/>
+
+  <!-- cabecera -->
+  <rect x="36" y="30" width="300" height="48" rx="24" fill="#FFE600" stroke="#D9A600" stroke-width="4"/>
+  <text x="186" y="62" text-anchor="middle" font-size="24" font-weight="700" fill="#5A3A00">X · SONIDO</text>
+  <text x="924" y="62" text-anchor="end" font-size="18" font-weight="700" fill="#5A3A00">←→ elegir · ↑ efectos · Espacio = aleatorio</text>
+
+  <!-- carrusel de sonidos -->
+  <g font-weight="700" text-anchor="middle">
+    <g transform="translate(40,100)" opacity="0.55">
+      <rect width="160" height="170" rx="26" fill="#2ED573"/>
+      <circle cx="80" cy="70" r="40" fill="#fff" opacity="0.35"/>
+      <path d="M50 70 L65 50 L80 90 L95 50 L110 70" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+      <text x="80" y="148" font-size="22" fill="#fff">Órgano</text>
+    </g>
+    <g transform="translate(212,100)" opacity="0.8">
+      <rect width="160" height="170" rx="26" fill="#1EC8FF"/>
+      <circle cx="80" cy="70" r="40" fill="#fff" opacity="0.35"/>
+      <path d="M48 85 L48 55 L80 85 L80 55 L112 85" fill="none" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+      <text x="80" y="148" font-size="22" fill="#fff">Sierra</text>
+    </g>
+    <!-- seleccionado -->
+    <g transform="translate(384,88)">
+      <rect x="-6" y="-6" width="204" height="206" rx="34" fill="none" stroke="#fff" stroke-width="6"/>
+      <rect width="192" height="194" rx="30" fill="#FF3B30"/>
+      <circle cx="96" cy="78" r="50" fill="#fff" opacity="0.3"/>
+      <g fill="#fff"><rect x="62" y="56" width="14" height="44" rx="3"/><rect x="80" y="56" width="14" height="44" rx="3"/>
+        <rect x="98" y="56" width="14" height="44" rx="3"/><rect x="116" y="56" width="14" height="44" rx="3"/></g>
+      <g fill="#5A1010"><rect x="71" y="56" width="9" height="26" rx="2"/><rect x="107" y="56" width="9" height="26" rx="2"/></g>
+      <text x="96" y="160" font-size="26" fill="#fff">Piano eléctrico</text>
+      <text x="96" y="182" font-size="15" fill="#fff" opacity="0.85">motor FM · 7 / 24</text>
+    </g>
+    <g transform="translate(588,100)" opacity="0.8">
+      <rect width="160" height="170" rx="26" fill="#B45CFF"/>
+      <circle cx="80" cy="70" r="40" fill="#fff" opacity="0.35"/>
+      <path d="M80 40 L80 70 M70 92 a10 10 0 1 0 20 0 a10 10 0 1 0 -20 0 M66 70 L94 70" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+      <text x="80" y="148" font-size="22" fill="#fff">Campanas</text>
+    </g>
+    <g transform="translate(760,100)" opacity="0.55">
+      <rect width="160" height="170" rx="26" fill="#FF8A00"/>
+      <circle cx="80" cy="70" r="40" fill="#fff" opacity="0.35"/>
+      <circle cx="68" cy="66" r="8" fill="#fff"/><circle cx="92" cy="66" r="8" fill="#fff"/>
+      <rect x="62" y="82" width="36" height="8" rx="4" fill="#fff"/>
+      <text x="80" y="148" font-size="22" fill="#fff">Mi voz 🎤</text>
+    </g>
+  </g>
+
+  <!-- panel de efectos (pantalla OLED) -->
+  <rect x="36" y="300" width="888" height="210" rx="26" fill="#1C1230" stroke="#FF7A1A" stroke-width="8"/>
+  <text x="66" y="338" font-size="20" font-weight="700" fill="#4DF0FF">EFECTOS  (↑ para entrar · perilla cambia el valor)</text>
+  <g font-weight="700" text-anchor="middle" font-size="17">
+    <!-- cada efecto: interruptor + medidor de la perilla -->
+    <g transform="translate(66,356)">
+      <rect width="118" height="130" rx="20" fill="#2a1d48"/>
+      <circle cx="59" cy="52" r="34" fill="none" stroke="#3d2c66" stroke-width="10"/>
+      <path d="M 34 76 A 34 34 0 1 1 93 52" fill="none" stroke="#4DF0FF" stroke-width="10" stroke-linecap="round"/>
+      <text x="59" y="58" fill="#fff" font-size="18">70%</text>
+      <text x="59" y="112" fill="#4DF0FF">Reverb</text>
+    </g>
+    <g transform="translate(196,356)">
+      <rect width="118" height="130" rx="20" fill="#2a1d48"/>
+      <circle cx="59" cy="52" r="34" fill="none" stroke="#3d2c66" stroke-width="10"/>
+      <path d="M 34 76 A 34 34 0 0 1 59 18" fill="none" stroke="#2ED573" stroke-width="10" stroke-linecap="round"/>
+      <text x="59" y="58" fill="#fff" font-size="18">1/8</text>
+      <text x="59" y="112" fill="#2ED573">Eco</text>
+    </g>
+    <!-- seleccionado: distorsión -->
+    <g transform="translate(326,350)">
+      <rect x="-4" y="-4" width="134" height="150" rx="24" fill="none" stroke="#FFE45C" stroke-width="5"/>
+      <rect width="126" height="142" rx="20" fill="#FF3B30"/>
+      <circle cx="63" cy="58" r="36" fill="none" stroke="#B3221A" stroke-width="10"/>
+      <path d="M 38 84 A 36 36 0 1 1 99 58 A 36 36 0 0 1 80 90" fill="none" stroke="#FFE45C" stroke-width="10" stroke-linecap="round"/>
+      <text x="63" y="64" fill="#fff" font-size="20">90%</text>
+      <text x="63" y="124" fill="#fff" font-size="19">Distorsión</text>
+    </g>
+    <g transform="translate(466,356)" opacity="0.5">
+      <rect width="118" height="130" rx="20" fill="#2a1d48"/>
+      <text x="59" y="60" fill="#8a7bb0" font-size="22">OFF</text>
+      <text x="59" y="112" fill="#8a7bb0">Chorus</text>
+    </g>
+    <g transform="translate(596,356)" opacity="0.5">
+      <rect width="118" height="130" rx="20" fill="#2a1d48"/>
+      <text x="59" y="60" fill="#8a7bb0" font-size="22">OFF</text>
+      <text x="59" y="112" fill="#8a7bb0">Robot</text>
+    </g>
+    <g transform="translate(726,356)">
+      <rect width="168" height="130" rx="20" fill="#2a1d48"/>
+      <path d="M 18 40 L 70 40 C 100 40, 110 90, 150 96" fill="none" stroke="#FF5CD6" stroke-width="6" stroke-linecap="round"/>
+      <text x="84" y="112" fill="#FF5CD6">Filtro (brillo)</text>
+    </g>
+  </g>
+</svg>

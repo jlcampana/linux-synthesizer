@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540" font-family="Fredoka, Nunito, 'Arial Rounded MT Bold', Arial, sans-serif">
+  <title>Chispa – taller de samples</title>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD23F"/><stop offset="1" stop-color="#FFB000"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="540" fill="#FF7A1A"/>
+  <rect x="12" y="12" width="936" height="516" rx="36" fill="url(#body)"/>
+
+  <rect x="36" y="30" width="310" height="48" rx="24" fill="#B45CFF"/>
+  <text x="191" y="62" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">🔧 TALLER DE SAMPLES</text>
+  <text x="924" y="62" text-anchor="end" font-size="18" font-weight="700" fill="#5A3A00">↑↓ elegir · R grabar · Espacio escuchar · Tab salir</text>
+
+  <!-- biblioteca -->
+  <g font-weight="700">
+    <g transform="translate(36,96)">
+      <rect width="230" height="70" rx="20" fill="#FF3B3B"/>
+      <circle cx="38" cy="35" r="22" fill="#fff" opacity="0.35"/><text x="38" y="43" text-anchor="middle" font-size="22" fill="#fff">▶</text>
+      <text x="72" y="32" font-size="20" fill="#fff">Ladrido</text><text x="72" y="54" font-size="14" fill="#fff" opacity="0.85">0,8 s · micro</text>
+    </g>
+    <g transform="translate(36,176)">
+      <rect x="-5" y="-5" width="240" height="80" rx="24" fill="none" stroke="#fff" stroke-width="5"/>
+      <rect width="230" height="70" rx="20" fill="#2ED573"/>
+      <circle cx="38" cy="35" r="22" fill="#fff" opacity="0.35"/><text x="38" y="43" text-anchor="middle" font-size="22" fill="#fff">▶</text>
+      <text x="72" y="32" font-size="20" fill="#fff">Mi voz "hola"</text><text x="72" y="54" font-size="14" fill="#fff" opacity="0.85">1,4 s · micro · Do</text>
+    </g>
+    <g transform="translate(36,256)">
+      <rect width="230" height="70" rx="20" fill="#1EC8FF"/>
+      <circle cx="38" cy="35" r="22" fill="#fff" opacity="0.35"/><text x="38" y="43" text-anchor="middle" font-size="22" fill="#fff">▶</text>
+      <text x="72" y="32" font-size="20" fill="#fff">Cacerola</text><text x="72" y="54" font-size="14" fill="#fff" opacity="0.85">0,5 s · batería</text>
+    </g>
+    <g transform="translate(36,336)">
+      <rect width="230" height="70" rx="20" fill="#FF8A00"/>
+      <circle cx="38" cy="35" r="22" fill="#fff" opacity="0.35"/><text x="38" y="43" text-anchor="middle" font-size="22" fill="#fff">▶</text>
+      <text x="72" y="32" font-size="20" fill="#fff">guitarra.mp3</text><text x="72" y="54" font-size="14" fill="#fff" opacity="0.85">3,0 s · importado</text>
+    </g>
+    <g transform="translate(36,416)">
+      <rect width="230" height="96" rx="20" fill="#FF3B30" stroke="#fff" stroke-width="4" stroke-dasharray="10 8"/>
+      <circle cx="44" cy="48" r="24" fill="#fff"/><circle cx="44" cy="48" r="12" fill="#FF3B30"/>
+      <text x="82" y="44" font-size="22" fill="#fff">Grabar</text><text x="82" y="70" font-size="16" fill="#fff">nuevo (R)</text>
+    </g>
+  </g>
+
+  <!-- editor de forma de onda -->
+  <rect x="284" y="96" width="640" height="250" rx="26" fill="#1C1230" stroke="#FF7A1A" stroke-width="8"/>
+  <text x="310" y="132" font-size="20" font-weight="700" fill="#4DF0FF">Mi voz "hola"   ·   ← → recortar inicio   ·   perilla recortar final</text>
+  <!-- zonas recortadas -->
+  <rect x="300" y="150" width="70" height="180" fill="#000" opacity="0.4"/>
+  <rect x="820" y="150" width="90" height="180" fill="#000" opacity="0.4"/>
+  <!-- onda -->
+  <g fill="#2ED573">
+    <rect x="310" y="236" width="6" height="8" rx="3"/><rect x="322" y="234" width="6" height="12" rx="3"/><rect x="334" y="232" width="6" height="16" rx="3"/>
+    <rect x="346" y="236" width="6" height="8" rx="3"/><rect x="358" y="234" width="6" height="12" rx="3"/>
+    <rect x="382" y="200" width="6" height="80" rx="3"/><rect x="394" y="180" width="6" height="120" rx="3"/><rect x="406" y="165" width="6" height="150" rx="3"/>
+    <rect x="418" y="175" width="6" height="130" rx="3"/><rect x="430" y="190" width="6" height="100" rx="3"/><rect x="442" y="170" width="6" height="140" rx="3"/>
+    <rect x="454" y="160" width="6" height="160" rx="3"/><rect x="466" y="180" width="6" height="120" rx="3"/><rect x="478" y="200" width="6" height="80" rx="3"/>
+    <rect x="490" y="210" width="6" height="60" rx="3"/><rect x="502" y="196" width="6" height="88" rx="3"/><rect x="514" y="178" width="6" height="124" rx="3"/>
+    <rect x="526" y="168" width="6" height="144" rx="3"/><rect x="538" y="176" width="6" height="128" rx="3"/><rect x="550" y="190" width="6" height="100" rx="3"/>
+    <rect x="562" y="200" width="6" height="80" rx="3"/><rect x="574" y="186" width="6" height="108" rx="3"/><rect x="586" y="174" width="6" height="132" rx="3"/>
+    <rect x="598" y="182" width="6" height="116" rx="3"/><rect x="610" y="196" width="6" height="88" rx="3"/><rect x="622" y="206" width="6" height="68" rx="3"/>
+    <rect x="634" y="214" width="6" height="52" rx="3"/><rect x="646" y="220" width="6" height="40" rx="3"/><rect x="658" y="222" width="6" height="36" rx="3"/>
+    <rect x="670" y="226" width="6" height="28" rx="3"/><rect x="682" y="228" width="6" height="24" rx="3"/><rect x="694" y="230" width="6" height="20" rx="3"/>
+    <rect x="706" y="232" width="6" height="16" rx="3"/><rect x="718" y="233" width="6" height="14" rx="3"/><rect x="730" y="234" width="6" height="12" rx="3"/>
+    <rect x="742" y="235" width="6" height="10" rx="3"/><rect x="754" y="236" width="6" height="8" rx="3"/><rect x="766" y="236" width="6" height="8" rx="3"/>
+    <rect x="778" y="237" width="6" height="6" rx="3"/><rect x="790" y="237" width="6" height="6" rx="3"/><rect x="802" y="237" width="6" height="6" rx="3"/>
+    <rect x="830" y="237" width="6" height="6" rx="3"/><rect x="842" y="237" width="6" height="6" rx="3"/><rect x="854" y="237" width="6" height="6" rx="3"/>
+  </g>
+  <!-- marcadores -->
+  <rect x="368" y="146" width="6" height="190" rx="3" fill="#FFE45C"/><path d="M371 146 l14 0 l-14 16 z" fill="#FFE45C"/>
+  <rect x="816" y="146" width="6" height="190" rx="3" fill="#FF5CD6"/><path d="M819 146 l-14 0 l14 16 z" fill="#FF5CD6"/>
+
+  <!-- botones de destrozar -->
+  <text x="290" y="378" font-size="20" font-weight="700" fill="#5A3A00">¡DESTRÓZALO!  (cada botón se puede deshacer con ⌫)</text>
+  <g font-weight="700" text-anchor="middle" font-size="18" fill="#fff">
+    <g transform="translate(284,392)"><rect width="148" height="54" rx="18" fill="#FF3B30"/><text x="74" y="34">⚡ Distorsión</text></g>
+    <g transform="translate(442,392)"><rect width="148" height="54" rx="18" fill="#B45CFF"/><text x="74" y="34">▦ Bitcrush</text></g>
+    <g transform="translate(600,392)"><rect width="148" height="54" rx="18" fill="#1EC8FF"/><text x="74" y="34">⟲ Al revés</text></g>
+    <g transform="translate(758,392)"><rect width="166" height="54" rx="18" fill="#2ED573"/><text x="83" y="34">≋ Eco</text></g>
+    <g transform="translate(284,456)"><rect width="148" height="54" rx="18" fill="#FF8A00"/><text x="74" y="34">▲ Más agudo</text></g>
+    <g transform="translate(442,456)"><rect width="148" height="54" rx="18" fill="#3D7BFF"/><text x="74" y="34">▼ Más grave</text></g>
+    <g transform="translate(600,456)"><rect width="148" height="54" rx="18" fill="#FF5CD6"/><text x="74" y="34">◎ Robot</text></g>
+    <g transform="translate(758,456)"><rect width="166" height="54" rx="18" fill="#1C1230"/><text x="83" y="34" fill="#FFE45C">✓ Usar en acordes</text></g>
+  </g>
+</svg>
