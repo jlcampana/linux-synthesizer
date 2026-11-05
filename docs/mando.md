@@ -6,8 +6,9 @@
   girar a la derecha y pulsar.
 - 3 capas con indicador LED, RGB, base de silicona antideslizante.
 - Cable USB-C, Bluetooth y 2,4 GHz. En inalámbrico apaga las luces.
-- Se configura **una vez en Windows** con el programa del fabricante y la configuración queda
-  guardada en el teclado. Después funciona en cualquier sistema.
+- El fabricante lo configura con un programa de Windows y la configuración queda guardada en el
+  teclado. **No tenemos Windows**, así que lo haremos desde Linux (ver
+  [Configuración sin Windows](#configuración-sin-windows)).
 - Un comprador lo usa en Photoshop con las perillas para zoom y tamaño de pincel. Eso confirma
   que las perillas pueden mandar cualquier tecla, no solo el volumen.
 
@@ -84,11 +85,61 @@ para el taller de samples.
 
 ---
 
-## Configuración (una vez, en Windows)
+## Configuración sin Windows
 
 La app lee el mando por su cuenta (ver abajo), así que **solo necesita que cada tecla y cada
-acción de perilla mande un código distinto**: 16 + 9 = 25 códigos. Propuesta, sin modificadores
-para que cada acción sea un solo evento:
+acción de perilla mande un código distinto**: 16 + 9 = 25 códigos. Puede que no haga falta
+configurar nada.
+
+### Paso 1: ver qué manda de fábrica (al llegar)
+
+Conectarlo **por cable** y ejecutar:
+
+```bash
+lsusb                 # anotar el ID, p. ej. 1189:8890
+sudo dnf install evtest
+sudo evtest           # elegir el mando y pulsar cada tecla y girar/pulsar cada perilla
+```
+
+- **Si los 25 códigos son distintos:** no hay que configurar nada. La app los aprende con el
+  asistente "Aprender mando". **Hecho.**
+- **Si se repiten** (por ejemplo, las 3 perillas mandan volumen): seguir al paso 2.
+
+Ojo: un mando puede aparecer como **varios dispositivos** en `evtest`, normalmente uno para el
+teclado y otro para las teclas multimedia. La app los abrirá todos.
+
+### Paso 2: programarlo desde Linux con `ch57x-keyboard-tool`
+
+[`ch57x-keyboard-tool`](https://github.com/kriomant/ch57x-keyboard-tool) es un programa de línea
+de comandos en Rust que programa estos mandos chinos con chip CH57x, que es casi seguro el de este.
+
+- **IDs admitidos:** `1189:8890`, `1189:8840` y `1189:8842`. Si `lsusb` da uno de estos, es muy
+  probable que funcione.
+- **Modelos probados:** 3×4, 3×3, 3×2, 3×1 y 4×1, y en las fotos aparecen 4×3 y 5×3 con 3 perillas.
+  El de 4×4 con 3 perillas **no está en la lista**, pero si el ID coincide lo normal es que sí funcione.
+
+```bash
+cargo install ch57x-keyboard-tool
+ch57x-keyboard-tool show-keys            # nombres de tecla admitidos (¿hay F13–F24?)
+ch57x-keyboard-tool validate < config/mando.yaml
+sudo ch57x-keyboard-tool upload < config/mando.yaml
+```
+
+El fichero `config/mando.yaml` se preparará cuando sepamos el ID y los nombres de tecla
+que admite. La configuración se guarda en el mando y no hay que repetirla.
+
+### Paso 3 (plan B): Windows en una máquina virtual
+
+Solo si el paso 2 no funciona:
+- Instalar `virt-manager` (está en Fedora) y la **ISO de evaluación gratuita de Windows** de Microsoft.
+- Pasar el USB del mando a la máquina virtual y usar allí el programa del fabricante, una sola vez.
+- Después se borra la máquina virtual.
+
+También vale pedir prestado un PC con Windows durante 10 minutos.
+
+### Códigos propuestos
+
+Sin modificadores, para que cada acción sea un solo evento:
 
 | Control | Código propuesto |
 |---|---|
@@ -98,14 +149,8 @@ para que cada acción sea un solo evento:
 | P2 izquierda / derecha / pulsar | Num `8` / `9` / `0` |
 | P3 izquierda / derecha / pulsar | Num `/` / `*` / `-` |
 
-Si el programa del fabricante no tiene F13–F24, vale **cualquier** combinación de 25 teclas
-distintas (letras incluidas). El asistente de la app las aprende igual.
-
-Si los códigos de fábrica ya son todos distintos, ni siquiera hace falta configurarlo.
-
-Alternativa en Linux (sin verificar para este modelo):
-[`ch57x-keyboard-tool`](https://docs.rs/crate/ch57x-keyboard-tool) programa mandos con chip CH57x.
-Para saber si sirve, hay que mirar con `lsusb` si el ID es `1189:8890`, `1189:8840` u `1189:8842`.
+Si la herramienta no admite F13–F24, vale **cualquier** combinación de 25 teclas distintas
+(letras incluidas). El asistente de la app las aprende igual.
 
 ---
 
